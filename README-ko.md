@@ -43,3 +43,10 @@ opencv_highgui420.dll<br/>
 opencv_videoio420.dll<br/>
 tbb.dll<br/>
 ngraph.dll<br/>
+
+## 6. 실행 명령어
+```
+OpenVINO-vs2015-security_barrier_camera_demo -i test.mp4 -m ./IR/vehicle-license-plate-detection-barrier-0106.xml -m_va ./IR/vehicle-attributes-recognition-barrier-0039.xml -m_lpr ./IR//license-plate-recognition-barrier-0001.xml -d GPU
+```
+
+> plugins.xml, MKLDNNPlugin.dll, mkl_tiny_tbb.dll 오류 시 해당 파일을 프로젝트 폴더로 복사
